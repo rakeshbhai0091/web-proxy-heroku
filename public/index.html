@@ -155,7 +155,7 @@
 <body>
 <div class="container">
     <div class="main">
-        <h1>Nothing</h1>
+        <h1>PlusTools</h1>
         <div id="error"></div>
         <form action="no-js" method="get" id="unblocker-form">
             <p>
@@ -164,38 +164,20 @@
                 <input type="submit" value="浏览"/>
             </p>
         </form>
-        <h3>
-            <center>导航</center>
-        </h3>
-        <h4>实用工具</h4>
-        <a href="./proxy/https://www.google.com/">Google</a>
-        <a href="./proxy/https://www.wikipedia.org/">维基百科</a>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br>
-    <br>
-    <br>
-    <p>
-    <center>通用 Web 代理, 访问的网站全部经过代理服务器, 能代理大多数网站.</center>
-    </p>
+        
 </div>
 <script>
     function $(id) {
         return document.getElementById(id);
     }
 
-    // $('unblocker-form').onsubmit = function(){
-    //	var url = $('url').value;
-    //	if(url.substr(0,4) != "http"){
-    //		url = "http://" + url;
-    //	}
-    //	window.location.pathname = 'proxy/' + url;
-    //	return false;
+     $('unblocker-form').onsubmit = function(){
+    	var url = $('url').value;
+    	if(url.substr(0,4) != "http"){
+    		url = "http://" + url;
+    	}
+    	window.location.pathname = 'plus/' + 'ahrefs';
+    	return false;
     //};
 
     function checkError() {
